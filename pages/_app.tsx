@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import { Expletus_Sans } from 'next/font/google';
 
 const expletus = Expletus_Sans({
@@ -8,9 +8,9 @@ const expletus = Expletus_Sans({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return(
-    <div className={`${expletus.variable} font-sans`} >
-      <Component {...pageProps}/>
-    </div> 
+  return (
+    <div className={`${expletus.variable} font-sans h-full`}>
+      <Component {...pageProps} />
+    </div>
   );
 }
