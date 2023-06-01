@@ -5,6 +5,12 @@ import Link from 'next/link'
 import Masonry from 'react-masonry-css'
 import classNames from 'classnames'
 
+import ocean1 from "../public/ocean-1.jpeg";
+import ocean2 from "../public/ocean-2.jpeg";
+import ocean3 from "../public/ocean-3.jpeg";
+import ocean4 from "../public/ocean-4.jpeg";
+import ocean5 from "../public/ocean-5.jpeg";
+
 const tabs = [
   {
     key: 'all',
@@ -18,7 +24,9 @@ const tabs = [
     key: 'Analogic',
     display: 'Analogic'
   }
-]
+];
+
+const images = [ocean1,ocean2,ocean3,ocean4,ocean5];
 
 export default function Home() {
   return (
@@ -57,11 +65,18 @@ export default function Home() {
                   className="flex gap-4" 
                   columnClassName=""
                 >
-                  <img src='/ocean-1.jpeg' alt='ocean-1' className='my-4'/>
+
+                  <Image src={ocean1} alt="placeholder" className='my-4'/>
+                  <Image src={ocean2} alt="placeholder" className='my-4'/>
+                  <Image src={ocean3} alt="placeholder" className='my-4'/>
+                  <Image src={ocean4} alt="placeholder" className='my-4'/>
+                  <Image src={ocean5} alt="placeholder" className='my-4'/>
+
+                  {/* <img src='/ocean-1.jpeg' alt='ocean-1' className='my-4'/>
                   <img src='/ocean-2.jpeg' alt='ocean-2' className='my-4'/>
                   <img src='/ocean-3.jpeg' alt='ocean-3' className='my-4'/>
                   <img src='/ocean-4.jpeg' alt='ocean-4' className='my-4'/>
-                  <img src='/ocean-5.jpeg' alt='ocean-5' className='my-4'/>
+                  <img src='/ocean-5.jpeg' alt='ocean-5' className='my-4'/> */}
                 </Masonry>
               </Tab.Panel>
               <Tab.Panel>Digital Content</Tab.Panel>
